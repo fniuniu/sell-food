@@ -36,6 +36,11 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+	  // 设置缩略路径
+	  'src': path.resolve(__dirname, '../src'),
+	  'common': path.resolve(__dirname, '../src/common'),
+	  'components': path.resolve(__dirname, '../src/components')
+
     }
   },
   module: {
@@ -89,4 +94,5 @@ module.exports = {
     tls: 'empty',
     child_process: 'empty'
   }
-}
+},
+
