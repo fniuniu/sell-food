@@ -33,3 +33,29 @@ HTML标签在浏览器中都有默认的样式，不同的浏览器的默认样�
 5-3 组件拆分
 package.json 注意下载"stylus": "^0.54.5", "stylus-loader": "^3.0.1",
 
+5-4 vue-router 页面跳转
+App.vue：
+1、<router-link to="{path:'/HelloWorld'}">跳转到HelloWorld</router-link>
+//浏览器窗口,保持
+<keep-alive>
+	<router-view></router-view>
+</keep-alive>
+
+2、router/index.js:
+import Router from 'vue-router'
+import HelloWorld from 'src/components/HelloWorld'
+
+routers:[
+	{
+		path: '/goods',
+		name: 'HelloWorld',
+		component: HelloWorld
+	},
+	{
+		path: '/Pop',
+		name: 'Pop',
+		component: Pop
+	}
+]
+3、当点击到router是 自动添加 class="router-link-active"
+可在style 改变样式
