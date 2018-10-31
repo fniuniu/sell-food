@@ -8,6 +8,9 @@
 1、切图，量尺寸
 2、因为webpack，尽量切小图
 3、dpr（dips） 公式：window.devicePixelRatio = 物理像素/dips）
+图片高度 80
+iphone6 dpr=2
+height： 40px
 4、svg图片 ->图标字体
 
 4-3 图标字体制作
@@ -24,4 +27,9 @@ HTML标签在浏览器中都有默认的样式，不同的浏览器的默认样�
 开发时浏览器的默认样式可能会给我们带来多浏览器兼容性问题，影响开发效率。
 现在很流行的解决方式是一开始就将浏览器的默认样式全部覆盖掉，这就是css reset。
 
-2、在index.html中引入<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+2、在index.html中引入
+<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+
+5-3 组件拆分
+package.json 注意下载"stylus": "^0.54.5", "stylus-loader": "^3.0.1",
+
