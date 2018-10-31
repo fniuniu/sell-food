@@ -3,15 +3,18 @@
     <v-header></v-header>
 
     <div class="tab">
-      <router-link :to="{path:'/Goods'}">
-        <div class="tab-item">商品</div>
-      </router-link>
-      <router-link :to="{path:'/Comments'}">
-        <div class="tab-item">评价</div>
-      </router-link>
-      <router-link :to="{path:'/Sells'}">
-        <div class="tab-item">商家</div>
-      </router-link>
+      <div class="tab-item">
+        <router-link :to="{path:'/Goods'}">商品</router-link>
+      </div>
+
+      <div class="tab-item">
+        <router-link :to="{path:'/Comments'}">评价</router-link>
+      </div>
+
+      <div class="tab-item">
+        <router-link :to="{path:'/Sells'}">商家</router-link>
+      </div>
+
     </div>
     <keep-alive>
       <router-view></router-view>
